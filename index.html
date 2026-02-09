@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Love Jar 💖</title>
+    <title>Digital Love Jar 🫀</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,7 +19,7 @@
             --glass-border: rgba(255, 255, 255, 0.6);
             --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
             --font-heading: 'Dancing Script', cursive;
-            --font-body: 'Poppins', sans-serif;
+            --font-body: 'Poppins', times-new-roman;
         }
 
         * {
@@ -421,7 +421,7 @@
 
     <main class="container">
         <header>
-            <h1>My Digital Love Jar <span class="heart-icon">💖</span></h1>
+            <h1>My Digital Love Jar <span class="heart-icon">👩🏿‍❤️‍💋‍👩🏽</span></h1>
             <p>Pick a category to pull a note from the jar...</p><br><br>
         </header>
 
@@ -435,14 +435,13 @@
         </div>
 
         <div class="controls">
-            <button class="btn category-btn" data-category="compliments">💖 Compliments</button>
-            <button class="btn category-btn" data-category="jokes">😂 Inside Jokes</button>
-            <button class="btn category-btn" data-category="memories">📸 Memories</button>
-            <button class="btn category-btn" data-category="promises">🤞 Promises</button>
+            <button class="btn category-btn" data-category="your beauty">your beauty😇</button>
+            <button class="btn category-btn" data-category="favourite memories">favourite memories🎞️</button>
+            <button class="btn category-btn" data-category="my promises to you">promises to you💍</button>
         </div>
 
         <div class="proposal-area">
-            <button id="proposalBtn" class="btn proposal-btn">Is there one last note? 💍</button>
+            <button id="proposalBtn" class="btn proposal-btn">CLICK ME BBG💍</button>
         </div>
     </main>
 
@@ -461,11 +460,11 @@
     <div id="proposalModal" class="modal">
         <div class="modal-content glass-card proposal-card">
             <div class="modal-body">
-                <h2>Will You Be My Valentine? 🌹</h2>
-                <p>You make my world brighter every single day. I can't imagine life without you.</p>
+                <h2>Will You Be My Valentine? Please...</h2>
+                <p>You are a better person and partner than I could have ever envisaged. I love you so dearly.</p>
                 <div class="proposal-buttons">
-                    <button id="yesBtn" class="btn yes-btn">YES! 😍</button>
-                    <button id="noBtn" class="btn no-btn">No 😢</button>
+                    <button id="yesBtn" class="btn yes-btn">YESSSS! 😍</button>
+                    <button id="noBtn" class="btn no-btn">No *button out of order* </button>
                 </div>
             </div>
         </div>
@@ -474,8 +473,8 @@
     <!-- Celebration Overlay -->
     <div id="celebrationOverlay" class="celebration-overlay hidden">
         <div class="celebration-content">
-            <h1>YAY! ❤️</h1>
-            <p>Best. Valentine. Ever.</p>
+            <h1>YAY! THIS IS SO AWESEOME!</h1>
+            <p>My perfect wife 🏔️</p>
             <br>
             <button class="btn category-btn close-celebration" style="background: white;">Close</button>
         </div>
@@ -486,42 +485,33 @@
 
     <script>
         // Data Arrays - Replace with your own content!
-        const compliments = [
-            "You light up every room you walk into.",
-            "Your smile is my favorite thing in the world.",
-            "I love the way you think.",
-            "You are incredibly kind and generous.",
-            "Being with you makes everything better.",
-            "You inspire me to be a better person.",
-            "You have the most beautiful soul.",
-            "I love your laugh!"
+        const yourbeauty = [
+            "You are so incredibly thoughtful.",
+            "You remind me to defend myself when I forget to.",
+            "Your eyes must be glimpses of the infinite galaxy (honestly.",
+            "Every atom of you sits divinely.",
+            "I admire your intelligence, passion, hard work, and consistency so incredibly much - you make me a better person.",
+            "YOU ARE SO GODDAMN MIGHTY FINE AND SEXY SCRUMPTIOUS.",
+      
         ];
 
-        const jokes = [
-            "Remember that time we tried to cook? Yeah, let's order pizza forever.",
-            "Inside Joke #404: Explanation not found.",
-            "You: *Sneezes* \nMe: 'Is that a yes?'",
-            "Us trying to navigate: 'Turn left!' 'No, the other left!'",
-            "That one movie we watched that made absolutely no sense...",
-            "Why did we think we could finish that giant pizza? (Okay, we definitely could have)."
+        const favouritememories = [
+            "Playing scrabble and getting to watch your wonderful mind work.",
+            "Your eyes being the first thing I get to see when I wake up next to you.",
+            "The very silly peck I gave you before I left for the summer.",
+            "Our spider-man kiss ;).",
+            "Eating dinner in your dimly-lit kitchen.",
+            "visiting you at work!!."
         ];
 
-        const promises = [
-            "I promise to always listen to you.",
-            "I promise to support your dreams, no matter how big.",
-            "I promise to be your biggest cheerleader.",
-            "I promise to always share my fries with you.",
-            "I promise to never go to bed angry.",
-            "I promise to love you, even when you're hangry."
-        ];
-
-        const memories = [
-            "Our first date... I was so nervous!",
-            "The trip to the beach where it rained all day.",
-            "That late night drive singing at the top of our lungs.",
-            "The first time you said 'I love you'.",
-            "Getting lost in the city and finding that amazing cafe.",
-            "Watching the sunset together."
+        const mypromisestoyou = [
+            "I will kiss every inch of your beautiful face every time I have the chance to.",
+            "I will always remind you that you can get exactly what you want from life.",
+            "I will always love you, forever, even when you accuse me of hitting you. sigh.",
+            "I will always steal your hoodies: whats yours is mine and whats mine is mine babygirl.",
+            "I will always terrorise you with my poetry, favourite music, books, art, and people!",
+            "I will eat the side salad you don't want - and make sure I learn how to cook all of your favourite foods!",
+            "I promise you will feel loved and cared for by me, even when we aren't physically present."
         ];
 
         // DOM Elements
@@ -571,7 +561,7 @@
                 heart.addEventListener('click', (e) => {
                     e.stopPropagation(); // Prevent bubbling if needed
                     // Pick a random category
-                    const categories = ['compliments', 'jokes', 'promises', 'memories'];
+                    const categories = ['your beauty', 'favourite memories', 'my promises to you'];
                     const randomCat = categories[Math.floor(Math.random() * categories.length)];
                     animateNoteAndShow(randomCat);
                 });
@@ -633,25 +623,20 @@
             let emoji = "";
 
             switch (category) {
-                case 'compliments':
-                    content = getRandomItem(compliments);
-                    title = "A Compliment for You";
-                    emoji = "💖";
+                case 'your beauty':
+                    content = getRandomItem(yourbeauty);
+                    title = "My gorgeous darling wife";
+                    emoji = "🙈";
                     break;
-                case 'jokes':
-                    content = getRandomItem(jokes);
-                    title = "Remember this?";
-                    emoji = "😂";
+                case 'favourite memories':
+                    content = getRandomItem(favouritememories);
+                    title = "I love being with you";
+                    emoji = "👾";
                     break;
-                case 'promises':
-                    content = getRandomItem(promises);
-                    title = "My Promise";
-                    emoji = "🤞";
-                    break;
-                case 'memories':
-                    content = getRandomItem(memories);
-                    title = "A Sweet Memory";
-                    emoji = "📸";
+                case 'my promises to you':
+                    content = getRandomItem(mypromisestoyou);
+                    title = "I vow that...";
+                    emoji = "🫡";
                     break;
             }
 
@@ -719,7 +704,7 @@
             // --- Send FormSubmit Email ---
             const email = "demo@gmail.com"; // <--- CHANGE THIS
             const formData = new FormData();
-            formData.append("message", "YES! They said YES! 💍💖");
+            formData.append("message", "YIPPIE ZOO BALLS!");
             formData.append("_captcha", "false");
 
             // We use fetch to send it in the background
@@ -776,5 +761,6 @@
         }
     </script>
 </body>
+
 
 </html>
